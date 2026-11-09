@@ -1,225 +1,139 @@
-# Astor Health — Production Web Application
+# Astor Health — Standalone Production Deployment (No Nginx Needed)
 
-Modern, high-performance web homepage for **Astor Health** (24/7 In-Home Care Services). Built with **React 19**, **TypeScript**, **Vite**, **Tailwind CSS v4**, and styled with **Poppins** typography. Fully optimized for senior legibility, fast loading, mobile responsiveness, and search/answer engine visibility.
-
----
-
-## Ubuntu Server Deployment Guide (via GitHub)
-
-Follow these step-by-step instructions to clone, build, and run this application on an Ubuntu 20.04, 22.04, or 24.04 LTS server.
+This guide shows you how to run this web application directly with Node.js on an **Ubuntu server** without needing Nginx, and configure it so it **automatically starts up whenever the server restarts or reboots**.
 
 ---
 
-### Step 1: Prepare Your Ubuntu Server
+## Step 1: Update Your Repository on Your Server
 
-Connect to your server via SSH:
 ```bash
-ssh username@your-server-ip
-```
-
-Update your package repositories:
-```bash
-sudo apt update && sudo apt upgrade -y
-```
-
-Install Git and build tools:
-```bash
-sudo apt install -y git curl build-essential
-```
-
----
-
-### Step 2: Install Node.js (v20 LTS Recommended)
-
-Install Node.js 20.x from the official NodeSource repository:
-```bash
-curl -fsSL https://deb.nodesource.com/setup_20.x | sudo -E bash -
-sudo apt install -y nodejs
-```
-
-Verify the installation:
-```bash
-node -v   # Output should be v20.x.x or higher
-npm -v    # Output should be 10.x.x or higher
-```
-
----
-
-### Step 3: Clone Your GitHub Repository
-
-Clone the project from your GitHub account:
-```bash
-cd /var/www  # or your preferred directory, e.g. /home/ubuntu
-git clone https://github.com/YOUR_USERNAME/YOUR_REPOSITORY.git astor-health
-cd astor-health
-```
-
----
-
-### Step 4: Install Dependencies & Build
-
-Install project dependencies:
-```bash
-npm install
-```
-
-Build the optimized production bundles:
-```bash
+cd /var/www/astor-health
+git pull origin main
+npm install --legacy-peer-deps
 npm run build
 ```
 
-This compiles the TypeScript code, bundles all assets, and creates the distribution output in the `./dist` directory.
+---
+
+## Step 2: Set Up Automatic Startup on Server Reboot
+
+Choose either **Method A (PM2 - Recommended)** or **Method B (Native Ubuntu Systemd)**. Both ensure the app boots automatically on server restart.
 
 ---
 
-### Step 5: Choose Your Deployment Method
+### Method A: Using PM2 (Easiest & Most Popular)
 
-You can serve this app in production using **Option A (Nginx Static Hosting - Recommended)** or **Option B (PM2 Daemon)**.
-
----
-
-#### Option A: High-Performance Nginx Web Server (Recommended)
-
-Nginx serves the pre-rendered static assets directly with high speed, low RAM usage, and built-in gzip compression.
-
-1. **Install Nginx**:
-   ```bash
-   sudo apt install -y nginx
-   ```
-
-2. **Create the Nginx site configuration**:
-   ```bash
-   sudo nano /etc/nginx/sites-available/astor-health
-   ```
-
-3. **Paste the following configuration** (replace `yourdomain.com` and `/var/www/astor-health` with your actual domain and path):
-   ```nginx
-   server {
-       listen 80;
-       listen [::]:80;
-       server_name yourdomain.com www.yourdomain.com;
-
-       root /var/www/astor-health/dist;
-       index index.html;
-
-       # Gzip Compression
-       gzip on;
-       gzip_vary on;
-       gzip_min_length 1024;
-       gzip_proxied expired no-cache no-store private auth;
-       gzip_types text/plain text/css text/xml text/javascript application/x-javascript application/xml application/javascript image/svg+xml;
-
-       # SPA Routing: Fall back to index.html for client-side routing
-       location / {
-           try_files $uri $uri/ /index.html;
-       }
-
-       # Cache static assets
-       location ~* \.(js|css|png|jpg|jpeg|gif|ico|svg|woff2|woff)$ {
-           expires 1y;
-           add_header Cache-Control "public, no-transform";
-       }
-
-       error_page 404 /index.html;
-   }
-   ```
-
-4. **Enable the site and restart Nginx**:
-   ```bash
-   sudo ln -s /etc/nginx/sites-available/astor-health /etc/nginx/sites-enabled/
-   sudo rm -f /etc/nginx/sites-enabled/default
-   sudo nginx -t
-   sudo systemctl restart nginx
-   ```
-
----
-
-#### Option B: Running with PM2 Process Manager
-
-If you prefer to run the Node/Vite server daemonized in the background:
+PM2 is a production process manager that keeps your app running 24/7 and restarts it automatically when the server reboots.
 
 1. **Install PM2 globally**:
    ```bash
    sudo npm install -g pm2
    ```
 
-2. **Start the production preview server on port 3000**:
+2. **Start the server with PM2**:
    ```bash
-   pm2 start npm --name "astor-health" -- run start
+   cd /var/www/astor-health
+   sudo pm2 start server.js --name "astor-health"
    ```
 
-3. **Configure PM2 to restart automatically on server reboots**:
+3. **Configure automatic startup on system reboot**:
    ```bash
-   pm2 startup
-   # Copy and run the command provided in the output, then save:
-   pm2 save
+   sudo pm2 startup
+   ```
+   PM2 will print a command that looks like:
+   ```text
+   sudo env PATH=$PATH:/usr/bin /usr/lib/node_modules/pm2/bin/pm2 startup systemd -u root --hp /root
+   ```
+   Copy and run that exact line in your terminal.
+
+4. **Save the running process list**:
+   ```bash
+   sudo pm2 save
    ```
 
-4. **Reverse-proxy port 3000 in Nginx**:
-   ```nginx
-   server {
-       listen 80;
-       server_name yourdomain.com;
+Now, whenever your Ubuntu server restarts, PM2 will automatically boot `astor-health` in the background.
 
-       location / {
-           proxy_pass http://127.0.0.1:3000;
-           proxy_http_version 1.1;
-           proxy_set_header Upgrade $http_upgrade;
-           proxy_set_header Connection 'upgrade';
-           proxy_set_header Host $host;
-           proxy_cache_bypass $http_upgrade;
-       }
-   }
-   ```
+#### Helpful PM2 Commands:
+- Check status: `pm2 status`
+- View live logs: `pm2 logs astor-health`
+- Restart app: `pm2 restart astor-health`
+- Stop app: `pm2 stop astor-health`
 
 ---
 
-### Step 6: Enable Free SSL/TLS with Let's Encrypt
+### Method B: Using Native Ubuntu Systemd (Built-in, No Extra Tools)
 
-Secure your website with free HTTPS using Certbot:
+If you do not want to install PM2, you can use Ubuntu's built-in `systemd` service manager.
+
+1. **Create the service file**:
+   ```bash
+   sudo nano /etc/systemd/system/astor-health.service
+   ```
+
+2. **Paste the following configuration**:
+   ```ini
+   [Unit]
+   Description=Astor Health Web Application
+   After=network.target
+
+   [Service]
+   Type=simple
+   User=root
+   WorkingDirectory=/var/www/astor-health
+   ExecStart=/usr/bin/node /var/www/astor-health/server.js
+   Restart=always
+   RestartSec=5
+   Environment=NODE_ENV=production
+   Environment=PORT=80
+
+   [Install]
+   WantedBy=multi-user.target
+   ```
+   *(Save and exit with `Ctrl + O`, `Enter`, then `Ctrl + X`)*
+
+3. **Reload systemd, enable automatic startup, and start the app**:
+   ```bash
+   sudo systemctl daemon-reload
+   sudo systemctl enable astor-health
+   sudo systemctl start astor-health
+   ```
+
+4. **Verify it is running**:
+   ```bash
+   sudo systemctl status astor-health
+   ```
+
+Because you ran `systemctl enable`, Ubuntu will automatically launch the app every time the machine powers on or reboots.
+
+---
+
+## Step 3: Open Port 80 in Your Firewall
+
+If your server has the Ubuntu firewall (UFW) active, allow standard web traffic on port 80:
+
 ```bash
-sudo apt install -y certbot python3-certbot-nginx
-sudo certbot --nginx -d yourdomain.com -d www.yourdomain.com
+sudo ufw allow 80/tcp
+sudo ufw allow 22/tcp
+sudo ufw reload
 ```
 
-Certbot will automatically obtain and install the SSL certificates and configure automatic renewal.
+Now open your web browser and visit `http://YOUR_SERVER_IP/` — your Astor Health website will be live!
 
 ---
 
-### Step 7: Configure Ubuntu Firewall (UFW)
+## How to Update the App Later
 
-Enable the firewall and permit HTTP, HTTPS, and SSH:
-```bash
-sudo ufw allow OpenSSH
-sudo ufw allow 'Nginx Full'
-sudo ufw enable
-sudo ufw status
-```
-
----
-
-### Step 8: How to Deploy Updates from GitHub
-
-Whenever you push new updates to your GitHub repository, update your Ubuntu server with:
+When you push new updates to GitHub:
 
 ```bash
 cd /var/www/astor-health
 git pull origin main
-npm install
+npm install --legacy-peer-deps
 npm run build
 
-# If using Option A (Nginx static):
-sudo systemctl reload nginx
-
-# If using Option B (PM2):
+# If using PM2:
 pm2 restart astor-health
+
+# If using Systemd:
+sudo systemctl restart astor-health
 ```
-
----
-
-## Local Development Commands
-
-- `npm run dev`: Starts the Vite local development server at `http://localhost:3000`.
-- `npm run build`: Compiles TypeScript and creates optimized production assets in `/dist`.
-- `npm run start`: Serves the production build on port 3000.
-- `npm run lint`: Verifies TypeScript types without emitting files.
