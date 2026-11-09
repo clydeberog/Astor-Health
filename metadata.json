@@ -1,0 +1,6 @@
+{
+  "name": "Astor Health | 24/7 In-Home Care Services",
+  "description": "Astor Health provides licensed 24/7 home care in NY and PA. We offer home health aides, personal care, housekeeping, fitness training, and specialized care. Call (718) 496-7111.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

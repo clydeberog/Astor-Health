@@ -1,0 +1,622 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- generator="WordPress/6.7" created="2026-11-09 12:00" -->
+<rss version="2.0"
+	xmlns:excerpt="http://wordpress.org/export/1.2/excerpt/"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:wp="http://wordpress.org/export/1.2/"
+>
+<channel>
+	<title>Astor Health</title>
+	<link>https://astorhealth.com</link>
+	<description>Reliable 24/7 In-Home Care Services in New York and Pennsylvania</description>
+	<pubDate>Mon, 09 Nov 2026 12:00:00 +0000</pubDate>
+	<language>en-US</language>
+	<wp:wxr_version>1.2</wp:wxr_version>
+	<wp:base_site_url>https://astorhealth.com</wp:base_site_url>
+	<wp:base_blog_url>https://astorhealth.com</wp:base_blog_url>
+
+	<wp:author>
+		<wp:author_id>1</wp:author_id>
+		<wp:author_login><![CDATA[astorhealth]]></wp:author_login>
+		<wp:author_email><![CDATA[info@astorhealth.com]]></wp:author_email>
+		<wp:author_display_name><![CDATA[Astor Health Care Team]]></wp:author_display_name>
+		<wp:author_first_name><![CDATA[Astor]]></wp:author_first_name>
+		<wp:author_last_name><![CDATA[Health]]></wp:author_last_name>
+	</wp:author>
+
+	<generator>https://wordpress.org/?v=6.7</generator>
+
+	<item>
+		<title><![CDATA[Home]]></title>
+		<link>https://astorhealth.com/</link>
+		<pubDate>Mon, 09 Nov 2026 12:00:00 +0000</pubDate>
+		<dc:creator><![CDATA[astorhealth]]></dc:creator>
+		<guid isPermaLink="false">https://astorhealth.com/?page_id=10</guid>
+		<description></description>
+		<content:encoded><![CDATA[<!-- wp:group {"align":"full","style":{"spacing":{"padding":{"top":"3rem","bottom":"3rem"}}},"backgroundColor":"white","layout":{"type":"constrained"}} -->
+<div class="wp-block-group alignfull has-white-background-color has-background" style="padding-top:3rem;padding-bottom:3rem">
+
+<!-- wp:paragraph {"style":{"typography":{"textTransform":"uppercase","fontWeight":"700","letterSpacing":"1px"}},"textColor":"luminous-vivid-amber","fontSize":"small"} -->
+<p class="has-luminous-vivid-amber-color has-text-color has-small-font-size" style="font-weight:700;letter-spacing:1px;text-transform:uppercase">LICENSED HOME CARE · NEW YORK &amp; PENNSYLVANIA</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":1,"style":{"typography":{"lineHeight":"1.2","fontWeight":"800"}},"textColor":"navy"} -->
+<h1 class="wp-block-heading has-navy-color has-text-color" style="font-weight:800;line-height:1.2">Reliable 24/7 In-Home Care Services in New York and Pennsylvania</h1>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph {"style":{"typography":{"fontSize":"1.25rem","lineHeight":"1.6"}},"textColor":"charcoal"} -->
+<p class="has-charcoal-color has-text-color" style="font-size:1.25rem;line-height:1.6">Astor Health provides licensed caregivers, home health aides, and personal support so you or your loved one can live safely, comfortably, and independently at home.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:buttons {"style":{"spacing":{"margin":{"top":"1.5rem","bottom":"1.5rem"}}}} -->
+<div class="wp-block-buttons" style="margin-top:1.5rem;margin-bottom:1.5rem">
+<!-- wp:button {"style":{"color":{"background":"#0b1b3d","text":"#ffffff"},"border":{"radius":"8px"}},"fontSize":"medium"} -->
+<div class="wp-block-button has-custom-font-size has-medium-font-size"><a class="wp-block-button__link has-text-color has-background wp-element-button" href="#contact" style="border-radius:8px;background-color:#0b1b3d;color:#ffffff">Request Care Today</a></div>
+<!-- /wp:button -->
+
+<!-- wp:button {"style":{"color":{"background":"#ffffff","text":"#0b1b3d"},"border":{"radius":"8px","width":"2px","color":"#0b1b3d"}},"fontSize":"medium"} -->
+<div class="wp-block-button has-custom-font-size has-medium-font-size"><a class="wp-block-button__link has-text-color has-background wp-element-button" href="tel:7184967111" style="border-radius:8px;border-color:#0b1b3d;border-width:2px;background-color:#ffffff;color:#0b1b3d">Speak With Our Care Team: (718) 496-7111</a></div>
+<!-- /wp:button -->
+</div>
+<!-- /wp:buttons -->
+
+<!-- wp:group {"style":{"spacing":{"padding":{"top":"1rem","bottom":"1rem","left":"1.5rem","right":"1.5rem"}},"border":{"radius":"8px"}},"backgroundColor":"cyan-bluish-gray","layout":{"type":"flex","flexWrap":"wrap","justifyContent":"space-between"}} -->
+<div class="wp-block-group has-cyan-bluish-gray-background-color has-background" style="border-radius:8px;padding-top:1rem;padding-right:1.5rem;padding-bottom:1rem;padding-left:1.5rem">
+<!-- wp:paragraph {"fontSize":"small"} --><p class="has-small-font-size">✔ <strong>24/7 Caregiver Support</strong></p><!-- /wp:paragraph -->
+<!-- wp:paragraph {"fontSize":"small"} --><p class="has-small-font-size">✔ <strong>Licensed &amp; Background-Checked Staff</strong></p><!-- /wp:paragraph -->
+<!-- wp:paragraph {"fontSize":"small"} --><p class="has-small-font-size">✔ <strong>Custom Care Plans for Every Family</strong></p><!-- /wp:paragraph -->
+</div>
+<!-- /wp:group -->
+
+</div>
+<!-- /wp:group -->
+
+<!-- wp:group {"align":"full","style":{"spacing":{"padding":{"top":"2rem","bottom":"2rem"}}},"backgroundColor":"white","layout":{"type":"constrained"}} -->
+<div class="wp-block-group alignfull has-white-background-color has-background" style="padding-top:2rem;padding-bottom:2rem">
+<!-- wp:image {"sizeSlug":"large","linkDestination":"none"} -->
+<figure class="wp-block-image size-large"><img src="/assets/aistudio/HQ-Transparent-File_c778bd0d.png" alt="American Caregiver Association Certified Member - The National Standard Since 1985" style="max-height:120px;width:auto;margin:0 auto;"/></figure>
+<!-- /wp:image -->
+<!-- wp:paragraph {"align":"center","fontSize":"medium"} -->
+<p class="has-text-align-center has-medium-font-size"><strong>American Caregiver Association · Certified Member</strong><br><span style="font-size:0.95rem;color:#64748b;">Setting The National Standard of In-Home Care Since 1985</span></p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:group -->
+
+<!-- wp:group {"align":"full","style":{"spacing":{"padding":{"top":"2.5rem","bottom":"2.5rem"}}},"backgroundColor":"pale-cyan-blue","layout":{"type":"constrained"}} -->
+<div class="wp-block-group alignfull has-pale-cyan-blue-background-color has-background" style="padding-top:2.5rem;padding-bottom:2.5rem">
+
+<!-- wp:heading {"level":2} -->
+<h2 class="wp-block-heading">Complete Home Care Tailored to Your Family</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph {"style":{"typography":{"fontSize":"1.15rem","lineHeight":"1.7"}}} -->
+<p style="font-size:1.15rem;line-height:1.7">Astor Health is a licensed home care agency based in Manhattan, New York (223 E 25th St, Unit G), serving families across New York and Pennsylvania. We deliver 24/7 in-home support for seniors, people with disabilities, and patients recovering from surgery or managing long-term illnesses. Our services include Home Health Aides, Personal Care Aides, Household Assistance, Specialized Medical Support, and In-Home Physical Fitness Training.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"fontSize":"small"} -->
+<p class="has-small-font-size">📍 <strong>Manhattan Office:</strong> 223 E 25th St, Unit G, New York, NY 10010 | 📞 <strong>24/7 Live Intake:</strong> <a href="tel:7184967111">(718) 496-7111</a> | <strong>Service Areas:</strong> New York &amp; Pennsylvania</p>
+<!-- /wp:paragraph -->
+
+</div>
+<!-- /wp:group -->
+
+<!-- wp:group {"align":"full","style":{"spacing":{"padding":{"top":"3rem","bottom":"3rem"}}},"layout":{"type":"constrained"}} -->
+<div class="wp-block-group alignfull" style="padding-top:3rem;padding-bottom:3rem">
+
+<!-- wp:heading {"level":2,"textAlign":"center"} -->
+<h2 class="wp-block-heading has-text-align-center">Our Home Care Services</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph {"align":"center"} -->
+<p class="has-text-align-center">Whether your loved one needs a few hours of help with housework or full-time medical support, we match you with the right professional.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:columns {"style":{"spacing":{"margin":{"top":"2rem"}}}} -->
+<div class="wp-block-columns" style="margin-top:2rem">
+<!-- wp:column {"style":{"spacing":{"padding":{"top":"1.5rem","bottom":"1.5rem","left":"1.5rem","right":"1.5rem"}},"border":{"width":"1px","color":"#e2e8f0","radius":"12px"}}} -->
+<div class="wp-block-column" style="border-color:#e2e8f0;border-width:1px;border-radius:12px;padding-top:1.5rem;padding-right:1.5rem;padding-bottom:1.5rem;padding-left:1.5rem">
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading">1. Home Health Aide (HHA)</h3>
+<!-- /wp:heading -->
+<!-- wp:paragraph -->
+<p><strong>What it is:</strong> Skilled, hands-on daily health and personal support at home.</p>
+<!-- /wp:paragraph -->
+<!-- wp:paragraph -->
+<p><strong>What we do:</strong></p>
+<!-- /wp:paragraph -->
+<!-- wp:list -->
+<ul class="wp-block-list">
+<li>Checking vital signs (blood pressure, temperature, pulse)</li>
+<li>Helping with medications</li>
+<li>Personal hygiene and grooming</li>
+<li>Safe movement around the house</li>
+<li>Following doctor-approved care plans</li>
+</ul>
+<!-- /wp:list -->
+<!-- wp:paragraph -->
+<p><a href="tel:7184967111"><strong>[ Learn More About Home Health Aides ]</strong></a></p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:column -->
+
+<!-- wp:column {"style":{"spacing":{"padding":{"top":"1.5rem","bottom":"1.5rem","left":"1.5rem","right":"1.5rem"}},"border":{"width":"1px","color":"#e2e8f0","radius":"12px"}}} -->
+<div class="wp-block-column" style="border-color:#e2e8f0;border-width:1px;border-radius:12px;padding-top:1.5rem;padding-right:1.5rem;padding-bottom:1.5rem;padding-left:1.5rem">
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading">2. Personal Care Aide (PCA)</h3>
+<!-- /wp:heading -->
+<!-- wp:paragraph -->
+<p><strong>What it is:</strong> Respectful daily assistance to help clients stay independent and comfortable.</p>
+<!-- /wp:paragraph -->
+<!-- wp:paragraph -->
+<p><strong>What we do:</strong></p>
+<!-- /wp:paragraph -->
+<!-- wp:list -->
+<ul class="wp-block-list">
+<li>Help with bathing, grooming, and getting dressed</li>
+<li>Assisting with using the restroom</li>
+<li>Walking safely throughout the house</li>
+<li>Friendly companionship</li>
+<li>Daily medication reminders</li>
+</ul>
+<!-- /wp:list -->
+<!-- wp:paragraph -->
+<p><a href="tel:7184967111"><strong>[ Learn More About Personal Care Aides ]</strong></a></p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:column -->
+</div>
+<!-- /wp:columns -->
+
+<!-- wp:columns {"style":{"spacing":{"margin":{"top":"1.5rem"}}}} -->
+<div class="wp-block-columns" style="margin-top:1.5rem">
+<!-- wp:column {"style":{"spacing":{"padding":{"top":"1.5rem","bottom":"1.5rem","left":"1.5rem","right":"1.5rem"}},"border":{"width":"1px","color":"#e2e8f0","radius":"12px"}}} -->
+<div class="wp-block-column" style="border-color:#e2e8f0;border-width:1px;border-radius:12px;padding-top:1.5rem;padding-right:1.5rem;padding-bottom:1.5rem;padding-left:1.5rem">
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading">3. Household Assistance (Homemaker Services)</h3>
+<!-- /wp:heading -->
+<!-- wp:paragraph -->
+<p><strong>What it is:</strong> Non-medical help around the house to keep the home clean, safe, and stress-free.</p>
+<!-- /wp:paragraph -->
+<!-- wp:paragraph -->
+<p><strong>What we do:</strong></p>
+<!-- /wp:paragraph -->
+<!-- wp:list -->
+<ul class="wp-block-list">
+<li>Light house cleaning</li>
+<li>Cooking healthy meals</li>
+<li>Laundry and changing bed linens</li>
+<li>Grocery shopping and running errands</li>
+<li>Driving clients to doctor appointments or social outings</li>
+</ul>
+<!-- /wp:list -->
+<!-- wp:paragraph -->
+<p><a href="tel:7184967111"><strong>[ Learn More About Household Assistance ]</strong></a></p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:column -->
+
+<!-- wp:column {"style":{"spacing":{"padding":{"top":"1.5rem","bottom":"1.5rem","left":"1.5rem","right":"1.5rem"}},"border":{"width":"1px","color":"#e2e8f0","radius":"12px"}}} -->
+<div class="wp-block-column" style="border-color:#e2e8f0;border-width:1px;border-radius:12px;padding-top:1.5rem;padding-right:1.5rem;padding-bottom:1.5rem;padding-left:1.5rem">
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading">4. Specialized Care for Complex Health Conditions</h3>
+<!-- /wp:heading -->
+<!-- wp:paragraph -->
+<p><strong>What it is:</strong> Expert, patient support for individuals recovering from surgery or living with ongoing health challenges.</p>
+<!-- /wp:paragraph -->
+<!-- wp:paragraph -->
+<p><strong>Conditions we support:</strong></p>
+<!-- /wp:paragraph -->
+<!-- wp:list -->
+<ul class="wp-block-list">
+<li>Alzheimer's disease and memory loss (dementia)</li>
+<li>Parkinson's disease</li>
+<li>Stroke recovery and physical disabilities</li>
+<li>ALS (Lou Gehrig's disease) and Multiple Sclerosis (MS)</li>
+<li>Traumatic Brain Injury (TBI)</li>
+<li>Care after hospital discharge or surgery</li>
+</ul>
+<!-- /wp:list -->
+<!-- wp:paragraph -->
+<p><a href="tel:7184967111"><strong>[ Learn More About Specialized Care ]</strong></a></p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:column -->
+</div>
+<!-- /wp:columns -->
+
+<!-- wp:group {"style":{"spacing":{"padding":{"top":"1.5rem","bottom":"1.5rem","left":"1.5rem","right":"1.5rem"},"margin":{"top":"1.5rem"}},"border":{"width":"1px","color":"#e2e8f0","radius":"12px"}}} -->
+<div class="wp-block-group" style="border-color:#e2e8f0;border-width:1px;border-radius:12px;margin-top:1.5rem;padding-top:1.5rem;padding-right:1.5rem;padding-bottom:1.5rem;padding-left:1.5rem">
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading">5. In-Home Physical Fitness Training</h3>
+<!-- /wp:heading -->
+<!-- wp:paragraph -->
+<p><strong>What it is:</strong> Safe, one-on-one exercise programs led by certified trainers right in your living room.</p>
+<!-- /wp:paragraph -->
+<!-- wp:paragraph -->
+<p><strong>What we do:</strong> Gentle strength exercises, balance training to prevent falls, stretching for flexibility, and heart-healthy movement designed around your exact physical abilities.</p>
+<!-- /wp:paragraph -->
+<!-- wp:paragraph -->
+<p><a href="tel:7184967111"><strong>[ Learn More About Physical Fitness Training ]</strong></a></p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:group -->
+
+</div>
+<!-- /wp:group -->
+
+<!-- wp:group {"align":"full","style":{"spacing":{"padding":{"top":"3rem","bottom":"3rem"}}},"backgroundColor":"white","layout":{"type":"constrained"}} -->
+<div class="wp-block-group alignfull has-white-background-color has-background" style="padding-top:3rem;padding-bottom:3rem">
+
+<!-- wp:heading {"level":2,"textAlign":"center"} -->
+<h2 class="wp-block-heading has-text-align-center">Who We Serve</h2>
+<!-- /wp:heading -->
+
+<!-- wp:columns {"style":{"spacing":{"margin":{"top":"2rem"}}}} -->
+<div class="wp-block-columns" style="margin-top:2rem">
+<!-- wp:column -->
+<div class="wp-block-column">
+<!-- wp:heading {"level":3,"fontSize":"medium"} -->
+<h3 class="wp-block-heading has-medium-font-size">Seniors Living at Home</h3>
+<!-- /wp:heading -->
+<!-- wp:paragraph -->
+<p>Helping older adults stay in the homes they love with daily help and companionship.</p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:column -->
+
+<!-- wp:column -->
+<div class="wp-block-column">
+<!-- wp:heading {"level":3,"fontSize":"medium"} -->
+<h3 class="wp-block-heading has-medium-font-size">Patients Recovering from Surgery</h3>
+<!-- /wp:heading -->
+<!-- wp:paragraph -->
+<p>Short-term or long-term support while healing after a hospital stay.</p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:column -->
+
+<!-- wp:column -->
+<div class="wp-block-column">
+<!-- wp:heading {"level":3,"fontSize":"medium"} -->
+<h3 class="wp-block-heading has-medium-font-size">Individuals with Disabilities</h3>
+<!-- /wp:heading -->
+<!-- wp:paragraph -->
+<p>Dedicated daily care and mobility support to encourage independence.</p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:column -->
+
+<!-- wp:column -->
+<div class="wp-block-column">
+<!-- wp:heading {"level":3,"fontSize":"medium"} -->
+<h3 class="wp-block-heading has-medium-font-size">Family Caregivers Needing a Break</h3>
+<!-- /wp:heading -->
+<!-- wp:paragraph -->
+<p>Respite care stepping in so family members can rest, work, or take time for themselves knowing their loved one is safe.</p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:column -->
+</div>
+<!-- /wp:columns -->
+
+</div>
+<!-- /wp:group -->
+
+<!-- wp:group {"align":"full","style":{"spacing":{"padding":{"top":"3rem","bottom":"3rem"}}},"backgroundColor":"cyan-bluish-gray","layout":{"type":"constrained"}} -->
+<div class="wp-block-group alignfull has-cyan-bluish-gray-background-color has-background" style="padding-top:3rem;padding-bottom:3rem">
+
+<!-- wp:heading {"level":2,"textAlign":"center"} -->
+<h2 class="wp-block-heading has-text-align-center">How to Start Care with Astor Health</h2>
+<!-- /wp:heading -->
+
+<!-- wp:columns {"style":{"spacing":{"margin":{"top":"2rem"}}}} -->
+<div class="wp-block-columns" style="margin-top:2rem">
+<!-- wp:column -->
+<div class="wp-block-column">
+<!-- wp:heading {"level":3,"fontSize":"medium"} -->
+<h3 class="wp-block-heading has-medium-font-size">1. Free Care Conversation</h3>
+<!-- /wp:heading -->
+<!-- wp:paragraph -->
+<p>Call us anytime at <a href="tel:7184967111"><strong>(718) 496-7111</strong></a> or fill out our online form to tell us about your family's needs.</p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:column -->
+
+<!-- wp:column -->
+<div class="wp-block-column">
+<!-- wp:heading {"level":3,"fontSize":"medium"} -->
+<h3 class="wp-block-heading has-medium-font-size">2. Custom Care Plan</h3>
+<!-- /wp:heading -->
+<!-- wp:paragraph -->
+<p>Working with you and your doctors, we create a daily care schedule that fits your health needs, home routine, and budget.</p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:column -->
+
+<!-- wp:column -->
+<div class="wp-block-column">
+<!-- wp:heading {"level":3,"fontSize":"medium"} -->
+<h3 class="wp-block-heading has-medium-font-size">3. Caregiver Match</h3>
+<!-- /wp:heading -->
+<!-- wp:paragraph -->
+<p>We introduce you to a trained, compassionate caregiver who fits your family's personality and requirements.</p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:column -->
+</div>
+<!-- /wp:columns -->
+
+</div>
+<!-- /wp:group -->
+
+<!-- wp:group {"align":"full","style":{"spacing":{"padding":{"top":"3rem","bottom":"3rem"}}},"backgroundColor":"white","layout":{"type":"constrained"}} -->
+<div class="wp-block-group alignfull has-white-background-color has-background" style="padding-top:3rem;padding-bottom:3rem">
+
+<!-- wp:heading {"level":2} -->
+<h2 class="wp-block-heading">Why Choose Astor Health?</h2>
+<!-- /wp:heading -->
+
+<!-- wp:columns -->
+<div class="wp-block-columns">
+<!-- wp:column -->
+<div class="wp-block-column">
+<!-- wp:list -->
+<ul class="wp-block-list">
+<li><strong>Available 24 Hours a Day, 7 Days a Week:</strong> Real people answer the phone whenever an emergency or question comes up.</li>
+<li><strong>Carefully Vetted Caregivers:</strong> Every aide and trainer is trained, background-checked, and chosen for their kindness and patience.</li>
+<li><strong>Healthcare Partnerships:</strong> We coordinate directly with hospitals, rehab centers, and community organizations for smooth care.</li>
+</ul>
+<!-- /wp:list -->
+</div>
+<!-- /wp:column -->
+
+<!-- wp:column -->
+<div class="wp-block-column">
+<!-- wp:paragraph -->
+<p><strong>Our Story &amp; Leadership:</strong></p>
+<!-- /wp:paragraph -->
+<!-- wp:paragraph -->
+<p>Astor Health was founded by <strong>JP de Leon, Director of Operations</strong>, inspired by Robert I. Toll's guiding belief that family is life's most prized possession. That principle drives our daily mission to deliver authentic, compassionate care across New York and Pennsylvania.</p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:column -->
+</div>
+<!-- /wp:columns -->
+
+</div>
+<!-- /wp:group -->
+
+<!-- wp:group {"align":"full","style":{"spacing":{"padding":{"top":"3rem","bottom":"3rem"}}},"backgroundColor":"pale-cyan-blue","layout":{"type":"constrained"}} -->
+<div class="wp-block-group alignfull has-pale-cyan-blue-background-color has-background" style="padding-top:3rem;padding-bottom:3rem">
+
+<!-- wp:heading {"level":2,"textAlign":"center"} -->
+<h2 class="wp-block-heading has-text-align-center">What Families Say About Our Care</h2>
+<!-- /wp:heading -->
+
+<!-- wp:columns {"style":{"spacing":{"margin":{"top":"2rem"}}}} -->
+<div class="wp-block-columns" style="margin-top:2rem">
+<!-- wp:column -->
+<div class="wp-block-column">
+<!-- wp:quote -->
+<blockquote class="wp-block-quote"><p>"There just aren't enough words that capture how strongly positive I feel about the agency and everybody I have encountered with them."</p><cite>— Barbara G., Manhattan, NY</cite></blockquote>
+<!-- /wp:quote -->
+</div>
+<!-- /wp:column -->
+
+<!-- wp:column -->
+<div class="wp-block-column">
+<!-- wp:quote -->
+<blockquote class="wp-block-quote"><p>"I see them being as the major health provider in the area and like the cream where people go to who want the best."</p><cite>— Jane T., New York, NY</cite></blockquote>
+<!-- /wp:quote -->
+</div>
+<!-- /wp:column -->
+</div>
+<!-- /wp:columns -->
+
+<!-- wp:paragraph {"align":"center"} -->
+<p class="has-text-align-center"><a href="tel:7184967111"><strong>[ Read More Family Stories ]</strong></a></p>
+<!-- /wp:paragraph -->
+
+</div>
+<!-- /wp:group -->
+
+<!-- wp:group {"align":"full","style":{"spacing":{"padding":{"top":"3rem","bottom":"3rem"}}},"backgroundColor":"white","layout":{"type":"constrained"}} -->
+<div class="wp-block-group alignfull has-white-background-color has-background" style="padding-top:3rem;padding-bottom:3rem">
+
+<!-- wp:heading {"level":2} -->
+<h2 class="wp-block-heading">Frequently Asked Questions About Home Care</h2>
+<!-- /wp:heading -->
+
+<!-- wp:heading {"level":3,"fontSize":"medium"} -->
+<h3 class="wp-block-heading has-medium-font-size">What is the difference between a Home Health Aide (HHA) and a Personal Care Aide (PCA)?</h3>
+<!-- /wp:heading -->
+<!-- wp:paragraph -->
+<p>Both help with daily tasks like bathing, dressing, and meal preparation, but a Home Health Aide (HHA) has extra training to monitor vital signs (like blood pressure and pulse) and assist with more specific medical care plans, while a Personal Care Aide (PCA) focuses on everyday personal comfort, grooming, and companionship.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":3,"fontSize":"medium"} -->
+<h3 class="wp-block-heading has-medium-font-size">Does Astor Health provide care for people with Alzheimer's or dementia?</h3>
+<!-- /wp:heading -->
+<!-- wp:paragraph -->
+<p>Yes, Astor Health provides specialized in-home care for individuals living with Alzheimer's disease, dementia, Parkinson's disease, ALS, Multiple Sclerosis, stroke recovery, and traumatic brain injuries.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":3,"fontSize":"medium"} -->
+<h3 class="wp-block-heading has-medium-font-size">What areas does Astor Health serve?</h3>
+<!-- /wp:heading -->
+<!-- wp:paragraph -->
+<p>Astor Health serves individuals and families across New York (with our main office in Manhattan at 223 E 25th St, Unit G) and Pennsylvania.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":3,"fontSize":"medium"} -->
+<h3 class="wp-block-heading has-medium-font-size">Can I get a caregiver for 24-hour support or just a few hours a week?</h3>
+<!-- /wp:heading -->
+<!-- wp:paragraph -->
+<p>Yes, we build custom schedules ranging from a few hours a week for housework and errands to full 24/7 around-the-clock care at home.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":3,"fontSize":"medium"} -->
+<h3 class="wp-block-heading has-medium-font-size">How can healthcare facilities or careers applicants contact Astor Health?</h3>
+<!-- /wp:heading -->
+<!-- wp:paragraph -->
+<p>Families and healthcare partners can call <a href="tel:7184967111">(718) 496-7111</a> or email <a href="mailto:info@astorhealth.com">info@astorhealth.com</a>. Caregivers looking to join our team can call <a href="tel:6468772943">(646) 877-2943</a> or email <a href="mailto:recruitment@astorhealth.com">recruitment@astorhealth.com</a>.</p>
+<!-- /wp:paragraph -->
+
+</div>
+<!-- /wp:group -->
+
+<!-- wp:group {"align":"full","style":{"spacing":{"padding":{"top":"3rem","bottom":"3rem"}}},"backgroundColor":"black","textColor":"white","layout":{"type":"constrained"}} -->
+<div class="wp-block-group alignfull has-white-color has-black-background-color has-text-color has-background" style="padding-top:3rem;padding-bottom:3rem">
+
+<!-- wp:heading {"level":2,"textColor":"white"} -->
+<h2 class="wp-block-heading has-white-color has-text-color">Astor Health</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p><strong>Manhattan Office Address:</strong> 223 E 25th St, Unit G, New York, NY 10010<br>
+<strong>Service Areas:</strong> New York &amp; Pennsylvania<br>
+<strong>Request Care Phone (24/7):</strong> <a href="tel:7184967111">(718) 496-7111</a><br>
+<strong>Recruitment / Jobs Phone:</strong> <a href="tel:6468772943">(646) 877-2943</a><br>
+<strong>Fax:</strong> (646) 777-5164<br>
+<strong>Emails:</strong> <a href="mailto:info@astorhealth.com">info@astorhealth.com</a> | <a href="mailto:recruitment@astorhealth.com">recruitment@astorhealth.com</a><br>
+<strong>Quick Links:</strong> Privacy Policy | Services | Partner With Us | Join Our Team | WhatsApp Chat</p>
+<!-- /wp:paragraph -->
+
+</div>
+<!-- /wp:group -->
+
+<!-- wp:html -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": ["MedicalBusiness", "HomeCareService"],
+      "@id": "https://astorhealth.com/#organization",
+      "name": "Astor Health",
+      "url": "https://astorhealth.com/",
+      "logo": "https://astorhealth.com/astor-health-logo.png",
+      "description": "Astor Health is a licensed home care agency providing 24/7 in-home support, Home Health Aides, Personal Care Aides, Household Assistance, and In-Home Physical Fitness across New York and Pennsylvania.",
+      "telephone": "+1-718-496-7111",
+      "faxNumber": "+1-646-777-5164",
+      "email": "info@astorhealth.com",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "223 E 25th St, Unit G",
+        "addressLocality": "New York",
+        "addressRegion": "NY",
+        "postalCode": "10010",
+        "addressCountry": "US"
+      },
+      "areaServed": [
+        {"@type": "State", "name": "New York"},
+        {"@type": "State", "name": "Pennsylvania"}
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://astorhealth.com/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is the difference between a Home Health Aide (HHA) and a Personal Care Aide (PCA)?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Both help with daily tasks like bathing, dressing, and meal preparation, but a Home Health Aide (HHA) has extra training to monitor vital signs (like blood pressure and pulse) and assist with more specific medical care plans, while a Personal Care Aide (PCA) focuses on everyday personal comfort, grooming, and companionship."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does Astor Health provide care for people with Alzheimer's or dementia?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, Astor Health provides specialized in-home care for individuals living with Alzheimer's disease, dementia, Parkinson's disease, ALS, Multiple Sclerosis, stroke recovery, and traumatic brain injuries."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What areas does Astor Health serve?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Astor Health serves individuals and families across New York (with our main office in Manhattan at 223 E 25th St, Unit G) and Pennsylvania."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I get a caregiver for 24-hour support or just a few hours a week?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, we build custom schedules ranging from a few hours a week for housework and errands to full 24/7 around-the-clock care at home."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How can healthcare facilities or careers applicants contact Astor Health?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Families and healthcare partners can call (718) 496-7111 or email info@astorhealth.com. Caregivers looking to join our team can call (646) 877-2943 or email recruitment@astorhealth.com."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+<!-- /wp:html -->
+]]></content:encoded>
+		<excerpt:encoded><![CDATA[Astor Health provides licensed 24/7 home care in NY and PA. We offer home health aides, personal care, housekeeping, fitness training, and specialized care. Call (718) 496-7111.]]></excerpt:encoded>
+		<wp:post_id>10</wp:post_id>
+		<wp:post_date><![CDATA[2026-11-09 12:00:00]]></wp:post_date>
+		<wp:post_date_gmt><![CDATA[2026-11-09 12:00:00]]></wp:post_date_gmt>
+		<wp:post_modified><![CDATA[2026-11-09 12:00:00]]></wp:post_modified>
+		<wp:post_modified_gmt><![CDATA[2026-11-09 12:00:00]]></wp:post_modified_gmt>
+		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
+		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
+		<wp:post_name><![CDATA[astor-health-home]]></wp:post_name>
+		<wp:status><![CDATA[publish]]></wp:status>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>0</wp:menu_order>
+		<wp:post_type><![CDATA[page]]></wp:post_type>
+		<wp:post_password><![CDATA[]]></wp:post_password>
+		<wp:is_sticky>0</wp:is_sticky>
+
+		<!-- Yoast SEO Meta -->
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_yoast_wpseo_title]]></wp:meta_key>
+			<wp:meta_value><![CDATA[Astor Health | 24/7 In-Home Care Services in New York &amp; Pennsylvania]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_yoast_wpseo_metadesc]]></wp:meta_key>
+			<wp:meta_value><![CDATA[Astor Health provides licensed 24/7 home care in NY and PA. We offer home health aides, personal care, housekeeping, fitness training, and specialized care. Call (718) 496-7111.]]></wp:meta_value>
+		</wp:postmeta>
+
+		<!-- Rank Math SEO Meta -->
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[rank_math_title]]></wp:meta_key>
+			<wp:meta_value><![CDATA[Astor Health | 24/7 In-Home Care Services in New York &amp; Pennsylvania]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[rank_math_description]]></wp:meta_key>
+			<wp:meta_value><![CDATA[Astor Health provides licensed 24/7 home care in NY and PA. We offer home health aides, personal care, housekeeping, fitness training, and specialized care. Call (718) 496-7111.]]></wp:meta_value>
+		</wp:postmeta>
+
+		<!-- All In One SEO Pack Meta -->
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_aioseo_title]]></wp:meta_key>
+			<wp:meta_value><![CDATA[Astor Health | 24/7 In-Home Care Services in New York &amp; Pennsylvania]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_aioseo_description]]></wp:meta_key>
+			<wp:meta_value><![CDATA[Astor Health provides licensed 24/7 home care in NY and PA. We offer home health aides, personal care, housekeeping, fitness training, and specialized care. Call (718) 496-7111.]]></wp:meta_value>
+		</wp:postmeta>
+
+		<!-- Template & Layout Meta -->
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_wp_page_template]]></wp:meta_key>
+			<wp:meta_value><![CDATA[default]]></wp:meta_value>
+		</wp:postmeta>
+	</item>
+</channel>
+</rss>
