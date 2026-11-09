@@ -143,6 +143,7 @@ export default function App() {
   const [openFaqIndex, setOpenFaqIndex] = useState<number | null>(0);
   const [isPrivacyModalOpen, setIsPrivacyModalOpen] = useState(false);
   const [isAboutDropdownOpen, setIsAboutDropdownOpen] = useState(false);
+  const [isLocationsDropdownOpen, setIsLocationsDropdownOpen] = useState(false);
 
   // Form states
   const [requestFormData, setRequestFormData] = useState({
@@ -199,7 +200,34 @@ export default function App() {
             <span className="text-[#0B1B3D] font-bold">Home</span>
             <span>Our Services</span>
             <span>Client Stories</span>
-            <span>Locations</span>
+
+            {/* Locations with Dropdown (New York & Pennsylvania) */}
+            <div
+              className="relative"
+              onMouseEnter={() => setIsLocationsDropdownOpen(true)}
+              onMouseLeave={() => setIsLocationsDropdownOpen(false)}
+            >
+              <button
+                type="button"
+                onClick={() => setIsLocationsDropdownOpen(!isLocationsDropdownOpen)}
+                className="flex items-center gap-1 text-slate-600 hover:text-[#0B1B3D] font-medium transition-colors cursor-pointer py-1.5 focus:outline-hidden"
+                aria-expanded={isLocationsDropdownOpen}
+              >
+                <span>Locations</span>
+                <ChevronDown className={`w-3.5 h-3.5 transition-transform duration-200 ${isLocationsDropdownOpen ? 'rotate-180 text-amber-600' : 'text-slate-400'}`} />
+              </button>
+
+              {isLocationsDropdownOpen && (
+                <div className="absolute left-0 top-full mt-1 w-44 bg-white rounded-xl shadow-lg border border-slate-200 py-1.5 z-50 animate-in fade-in slide-in-from-top-1 duration-150">
+                  <span className="block px-4 py-2 text-sm text-slate-700 hover:text-[#0B1B3D] hover:bg-slate-50 font-medium transition-colors cursor-default">
+                    New York
+                  </span>
+                  <span className="block px-4 py-2 text-sm text-slate-700 hover:text-[#0B1B3D] hover:bg-slate-50 font-medium transition-colors cursor-default border-t border-slate-100">
+                    Pennsylvania
+                  </span>
+                </div>
+              )}
+            </div>
 
             {/* About Us with Dropdown (containing Who We Help & Contact Us) */}
             <div
@@ -223,10 +251,13 @@ export default function App() {
                     About Us
                   </span>
                   <span className="block px-4 py-2 text-sm text-slate-700 hover:text-[#0B1B3D] hover:bg-slate-50 font-medium transition-colors cursor-default border-t border-slate-100">
+                    Contact Us
+                  </span>
+                  <span className="block px-4 py-2 text-sm text-slate-700 hover:text-[#0B1B3D] hover:bg-slate-50 font-medium transition-colors cursor-default border-t border-slate-100">
                     Who We Help
                   </span>
                   <span className="block px-4 py-2 text-sm text-slate-700 hover:text-[#0B1B3D] hover:bg-slate-50 font-medium transition-colors cursor-default border-t border-slate-100">
-                    Contact Us
+                    Join Our Team
                   </span>
                 </div>
               )}
@@ -272,7 +303,22 @@ export default function App() {
               <span className="text-[#0B1B3D] font-semibold py-1">Home</span>
               <span className="py-1">Our Services</span>
               <span className="py-1">Client Stories</span>
-              <span className="py-1">Locations</span>
+              <div>
+                <button
+                  type="button"
+                  onClick={() => setIsLocationsDropdownOpen(!isLocationsDropdownOpen)}
+                  className="w-full flex items-center justify-between py-1 text-left font-medium text-slate-800 cursor-pointer"
+                >
+                  <span>Locations</span>
+                  <ChevronDown className={`w-4 h-4 transition-transform ${isLocationsDropdownOpen ? 'rotate-180 text-amber-600' : 'text-slate-400'}`} />
+                </button>
+                {isLocationsDropdownOpen && (
+                  <div className="pl-4 mt-1.5 space-y-2 text-base text-slate-600 border-l-2 border-amber-500">
+                    <span className="block py-1">New York</span>
+                    <span className="block py-1">Pennsylvania</span>
+                  </div>
+                )}
+              </div>
               <div>
                 <button
                   type="button"
@@ -285,8 +331,9 @@ export default function App() {
                 {isAboutDropdownOpen && (
                   <div className="pl-4 mt-1.5 space-y-2 text-base text-slate-600 border-l-2 border-amber-500">
                     <span className="block py-1">About Us</span>
-                    <span className="block py-1">Who We Help</span>
                     <span className="block py-1">Contact Us</span>
+                    <span className="block py-1">Who We Help</span>
+                    <span className="block py-1">Join Our Team</span>
                   </div>
                 )}
               </div>
