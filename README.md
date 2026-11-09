@@ -137,3 +137,79 @@ pm2 restart astor-health
 # If using Systemd:
 sudo systemctl restart astor-health
 ```
+
+---
+
+## Setting Up with Cloudflare Tunnel (`cloudflared`)
+
+A Cloudflare Tunnel connects your server directly to Cloudflare's edge network **without opening any inbound ports on your firewall or router**, and provides automatic HTTPS/SSL and DDoS protection.
+
+### Method 1: Using the Cloudflare Zero Trust Dashboard (Recommended & Fastest)
+
+1. Open the [Cloudflare Zero Trust Dashboard](https://one.dash.cloudflare.com/).
+2. Navigate to **Networks** > **Tunnels** > Click **Create a Tunnel**.
+3. Choose **Cloudflared** as the connector type and give it a name (e.g. `astor-health`).
+4. Under **Install and run a connector**, select **Debian/Ubuntu** (64-bit).
+5. Cloudflare will give you a pre-configured install command containing your tunnel token. Copy and run that command on your Ubuntu server:
+   ```bash
+   curl -L --output cloudflared.deb https://github.com/cloudflare/cloudflared/releases/latest/download/cloudflared-linux-amd64.deb && sudo dpkg -i cloudflared.deb && sudo cloudflared service install <YOUR_TOKEN>
+   ```
+   *(This installs `cloudflared` and automatically enables it as an Ubuntu system service that auto-starts on reboot).*
+6. In the Cloudflare dashboard, click **Next** to configure the **Public Hostname**:
+   - **Subdomain / Domain**: Enter your domain (e.g. `astorhealth.com` or `care.yourdomain.com`).
+   - **Type**: Select `HTTP`.
+   - **URL**: Enter `localhost:80` (or `localhost:3000` if running on port 3000).
+7. Click **Save tunnel**.
+
+Your website is now securely accessible worldwide over HTTPS with no ports opened on your firewall!
+
+---
+
+### Method 2: Setting Up via CLI (Command Line Only)
+
+1. **Install cloudflared on Ubuntu**:
+   ```bash
+   curl -L --output cloudflared.deb https://github.com/cloudflare/cloudflared/releases/latest/download/cloudflared-linux-amd64.deb
+   sudo dpkg -i cloudflared.deb
+   ```
+
+2. **Authenticate with your Cloudflare account**:
+   ```bash
+   cloudflared tunnel login
+   ```
+   *(Click the URL shown in terminal to authorize your domain in Cloudflare).*
+
+3. **Create the tunnel**:
+   ```bash
+   cloudflared tunnel create astor-tunnel
+   ```
+   Note the Tunnel ID that is generated.
+
+4. **Create the configuration file**:
+   ```bash
+   sudo mkdir -p /etc/cloudflared
+   sudo nano /etc/cloudflared/config.yml
+   ```
+   Add the following:
+   ```yaml
+   tunnel: <YOUR-TUNNEL-ID>
+   credentials-file: /root/.cloudflared/<YOUR-TUNNEL-ID>.json
+
+   ingress:
+     - hostname: yourdomain.com
+       service: http://localhost:80
+     - service: http_status:404
+   ```
+
+5. **Route your DNS to the tunnel**:
+   ```bash
+   cloudflared tunnel route dns astor-tunnel yourdomain.com
+   ```
+
+6. **Install cloudflared as an auto-starting system service**:
+   ```bash
+   sudo cloudflared service install
+   sudo systemctl start cloudflared
+   sudo systemctl enable cloudflared
+   ```
+

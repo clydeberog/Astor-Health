@@ -198,10 +198,10 @@ export default function App() {
           <nav className="hidden lg:flex items-center gap-6 xl:gap-8 text-[15px] font-medium text-slate-600 select-none">
             <span className="text-[#0B1B3D] font-bold">Home</span>
             <span>Our Services</span>
-            <span>Who We Help</span>
             <span>Client Stories</span>
+            <span>Locations</span>
 
-            {/* About Us with Dropdown (containing Contact Us) */}
+            {/* About Us with Dropdown (containing Who We Help & Contact Us) */}
             <div
               className="relative"
               onMouseEnter={() => setIsAboutDropdownOpen(true)}
@@ -218,9 +218,12 @@ export default function App() {
               </button>
 
               {isAboutDropdownOpen && (
-                <div className="absolute left-0 top-full mt-1 w-44 bg-white rounded-xl shadow-lg border border-slate-200 py-1.5 z-50 animate-in fade-in slide-in-from-top-1 duration-150">
+                <div className="absolute left-0 top-full mt-1 w-48 bg-white rounded-xl shadow-lg border border-slate-200 py-1.5 z-50 animate-in fade-in slide-in-from-top-1 duration-150">
                   <span className="block px-4 py-2 text-sm text-slate-700 hover:text-[#0B1B3D] hover:bg-slate-50 font-medium transition-colors cursor-default">
                     About Us
+                  </span>
+                  <span className="block px-4 py-2 text-sm text-slate-700 hover:text-[#0B1B3D] hover:bg-slate-50 font-medium transition-colors cursor-default border-t border-slate-100">
+                    Who We Help
                   </span>
                   <span className="block px-4 py-2 text-sm text-slate-700 hover:text-[#0B1B3D] hover:bg-slate-50 font-medium transition-colors cursor-default border-t border-slate-100">
                     Contact Us
@@ -268,8 +271,8 @@ export default function App() {
             <nav className="flex flex-col space-y-3 text-lg font-medium text-slate-800 select-none">
               <span className="text-[#0B1B3D] font-semibold py-1">Home</span>
               <span className="py-1">Our Services</span>
-              <span className="py-1">Who We Help</span>
               <span className="py-1">Client Stories</span>
+              <span className="py-1">Locations</span>
               <div>
                 <button
                   type="button"
@@ -282,6 +285,7 @@ export default function App() {
                 {isAboutDropdownOpen && (
                   <div className="pl-4 mt-1.5 space-y-2 text-base text-slate-600 border-l-2 border-amber-500">
                     <span className="block py-1">About Us</span>
+                    <span className="block py-1">Who We Help</span>
                     <span className="block py-1">Contact Us</span>
                   </div>
                 )}
