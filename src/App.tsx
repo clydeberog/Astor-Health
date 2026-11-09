@@ -21,7 +21,8 @@ import {
   Stethoscope,
   ArrowRight,
   Building,
-  FileCheck
+  FileCheck,
+  ExternalLink
 } from 'lucide-react';
 
 // Real photography and certified badges for Astor Health (bundled via Vite)
@@ -1176,7 +1177,114 @@ export default function App() {
           </div>
         </section>
 
-        {/* SECTION 10: CLEAR FOOTER (Complete Business Identity) */}
+        {/* SECTION 10: GOOGLE MAP EMBED (Our Main Office & Service Area) */}
+        <section id="locations" className="py-16 sm:py-20 bg-slate-50 border-b border-slate-200 scroll-mt-20">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="flex flex-col lg:flex-row lg:items-end justify-between mb-8 gap-4">
+              <div>
+                <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-50 border border-blue-200 text-blue-900 text-xs font-bold uppercase tracking-wider mb-3">
+                  <MapPin className="w-3.5 h-3.5 text-blue-700" />
+                  <span>Main Office & Service Areas</span>
+                </div>
+                <h2 className="text-3xl sm:text-4xl font-extrabold text-[#0B1B3D]">
+                  Our Location
+                </h2>
+              </div>
+
+              <a
+                href="https://maps.app.goo.gl/X5nK6ZGE2B7rAU4H7"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 px-5 py-2.5 bg-white hover:bg-slate-50 text-[#0B1B3D] border border-slate-300 hover:border-[#0B1B3D] rounded-xl font-bold text-sm shadow-xs transition-all self-start lg:self-auto cursor-pointer"
+              >
+                <MapPin className="w-4 h-4 text-emerald-600" />
+                <span>Open in Google Maps</span>
+                <ExternalLink className="w-3.5 h-3.5 text-slate-400" />
+              </a>
+            </div>
+
+            {/* Map Frame Card with Office Details */}
+            <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 items-stretch">
+              {/* Office Details Card */}
+              <div className="bg-white rounded-2xl border border-slate-200 p-6 sm:p-8 flex flex-col justify-between shadow-xs">
+                <div className="space-y-6">
+                  <div>
+                    <span className="text-xs font-bold uppercase tracking-wider text-slate-400 block mb-1">
+                      Manhattan Headquarters
+                    </span>
+                    <h3 className="text-xl font-bold text-[#0B1B3D]">Astor Health Inc.</h3>
+                    <p className="mt-2 text-slate-600 text-sm leading-relaxed flex items-start gap-2">
+                      <MapPin className="w-4 h-4 text-amber-600 shrink-0 mt-0.5" />
+                      <span>223 E 25th St, Unit G<br />New York, NY 10010</span>
+                    </p>
+                  </div>
+
+                  <div className="pt-4 border-t border-slate-100">
+                    <span className="text-xs font-bold uppercase tracking-wider text-slate-400 block mb-1">
+                      Intake & Coordination
+                    </span>
+                    <p className="text-sm font-semibold text-slate-800 flex items-center gap-2">
+                      <Phone className="w-4 h-4 text-emerald-600 shrink-0" />
+                      <a href="tel:7184967111" className="hover:underline text-[#0B1B3D] font-bold">
+                        (718) 496-7111
+                      </a>
+                    </p>
+                    <p className="mt-1 text-xs text-slate-500">Available 24/7 for families and hospitals</p>
+                  </div>
+
+                  <div className="pt-4 border-t border-slate-100">
+                    <span className="text-xs font-bold uppercase tracking-wider text-slate-400 block mb-1">
+                      Coverage Regions
+                    </span>
+                    <ul className="text-sm text-slate-700 space-y-1.5 font-medium">
+                      <li className="flex items-center gap-2">
+                        <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0" />
+                        <span>All 5 Boroughs of New York City</span>
+                      </li>
+                      <li className="flex items-center gap-2">
+                        <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0" />
+                        <span>Long Island & Westchester County</span>
+                      </li>
+                      <li className="flex items-center gap-2">
+                        <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0" />
+                        <span>Pennsylvania Community Care Network</span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div className="mt-8 pt-4 border-t border-slate-100">
+                  <a
+                    href="https://maps.app.goo.gl/X5nK6ZGE2B7rAU4H7"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="w-full inline-flex items-center justify-center gap-2 py-3 px-4 bg-[#0B1B3D] hover:bg-[#16284F] text-white rounded-xl text-sm font-bold shadow-xs transition-all text-center cursor-pointer"
+                  >
+                    <span>Get Directions</span>
+                    <ExternalLink className="w-4 h-4" />
+                  </a>
+                </div>
+              </div>
+
+              {/* Embedded Google Map Iframe */}
+              <div className="lg:col-span-2 bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-xs min-h-[380px] sm:min-h-[460px] flex">
+                <iframe
+                  title="Astor Health Inc. Google Map"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.9540055745195!2d-73.9835690234704!3d40.73983037138944!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25915978134b7%3A0x21540f68b6c7d5c5!2sAstor%20Health%20Inc.!5e0!3m2!1sen!2sus!4v1715000000000!5m2!1sen!2sus"
+                  width="100%"
+                  height="100%"
+                  style={{ border: 0, minHeight: '420px' }}
+                  allowFullScreen
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                  className="w-full h-full"
+                />
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* SECTION 11: CLEAR FOOTER (Complete Business Identity) */}
         <footer id="contact" className="bg-[#0B1B3D] text-white pt-16 pb-12 border-t-4 border-amber-500">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-10 pb-12 border-b border-slate-700/80">
