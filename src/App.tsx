@@ -24,12 +24,12 @@ import {
   FileCheck
 } from 'lucide-react';
 
-// Real photography generated for Astor Health
-const HERO_IMG = '/src/assets/images/hero_caregiver_senior_1794224895419.jpg';
-const HHA_IMG = '/src/assets/images/home_health_aide_care_1794224896338.jpg';
-const FITNESS_IMG = '/src/assets/images/senior_physical_fitness_1794224898464.jpg';
-const LEADERSHIP_IMG = '/src/assets/images/care_director_consultation_1794224897908.jpg';
-const ACA_SEAL_IMG = '/assets/aistudio/HQ-Transparent-File_c778bd0d.png';
+// Real photography and certified badges for Astor Health (bundled via Vite)
+import HERO_IMG from './assets/images/hero_caregiver_senior_1794224895419.jpg';
+import HHA_IMG from './assets/images/home_health_aide_care_1794224896338.jpg';
+import FITNESS_IMG from './assets/images/senior_physical_fitness_1794224898464.jpg';
+import LEADERSHIP_IMG from './assets/images/care_director_consultation_1794224897908.jpg';
+import ACA_SEAL_IMG from './assets/images/aca_seal.png';
 
 interface ServiceDetail {
   id: string;
