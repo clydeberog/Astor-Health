@@ -343,10 +343,12 @@ export default function App() {
 
                   <a
                     href="tel:7184967111"
+                    title="(718) 496-7111"
+                    aria-label="Speak to our Team at (718) 496-7111"
                     className="inline-flex items-center justify-center gap-2.5 px-6 py-3.5 bg-white hover:bg-slate-50 text-[#0B1B3D] border-2 border-slate-300 hover:border-[#0B1B3D] rounded-xl font-bold text-base transition-all shadow-xs"
                   >
                     <Phone className="w-5 h-5 text-emerald-600 shrink-0" />
-                    <span>Speak With Our Care Team: (718) 496-7111</span>
+                    <span>Speak to our Team</span>
                   </a>
                 </div>
 
