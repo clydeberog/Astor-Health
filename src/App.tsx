@@ -142,6 +142,7 @@ export default function App() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [openFaqIndex, setOpenFaqIndex] = useState<number | null>(0);
   const [isPrivacyModalOpen, setIsPrivacyModalOpen] = useState(false);
+  const [isAboutDropdownOpen, setIsAboutDropdownOpen] = useState(false);
 
   // Form states
   const [requestFormData, setRequestFormData] = useState({
@@ -193,14 +194,40 @@ export default function App() {
             </span>
           </div>
 
-          {/* Center Links - Inline Plain Text */}
+          {/* Center Links - Inline with About Us dropdown */}
           <nav className="hidden lg:flex items-center gap-6 xl:gap-8 text-[15px] font-medium text-slate-600 select-none">
             <span className="text-[#0B1B3D] font-bold">Home</span>
             <span>Our Services</span>
             <span>Who We Help</span>
             <span>Client Stories</span>
-            <span>About Us</span>
-            <span>Contact Us</span>
+
+            {/* About Us with Dropdown (containing Contact Us) */}
+            <div
+              className="relative"
+              onMouseEnter={() => setIsAboutDropdownOpen(true)}
+              onMouseLeave={() => setIsAboutDropdownOpen(false)}
+            >
+              <button
+                type="button"
+                onClick={() => setIsAboutDropdownOpen(!isAboutDropdownOpen)}
+                className="flex items-center gap-1 text-slate-600 hover:text-[#0B1B3D] font-medium transition-colors cursor-pointer py-1.5 focus:outline-hidden"
+                aria-expanded={isAboutDropdownOpen}
+              >
+                <span>About Us</span>
+                <ChevronDown className={`w-3.5 h-3.5 transition-transform duration-200 ${isAboutDropdownOpen ? 'rotate-180 text-amber-600' : 'text-slate-400'}`} />
+              </button>
+
+              {isAboutDropdownOpen && (
+                <div className="absolute left-0 top-full mt-1 w-44 bg-white rounded-xl shadow-lg border border-slate-200 py-1.5 z-50 animate-in fade-in slide-in-from-top-1 duration-150">
+                  <span className="block px-4 py-2 text-sm text-slate-700 hover:text-[#0B1B3D] hover:bg-slate-50 font-medium transition-colors cursor-default">
+                    About Us
+                  </span>
+                  <span className="block px-4 py-2 text-sm text-slate-700 hover:text-[#0B1B3D] hover:bg-slate-50 font-medium transition-colors cursor-default border-t border-slate-100">
+                    Contact Us
+                  </span>
+                </div>
+              )}
+            </div>
           </nav>
 
           {/* Right Side: Inline Phone & Action Buttons */}
@@ -212,13 +239,6 @@ export default function App() {
               <Phone className="w-4 h-4 text-emerald-600" />
               <span className="tabular-nums font-bold">(718) 496-7111</span>
             </a>
-
-            <button
-              onClick={() => setIsJoinTeamOpen(true)}
-              className="text-slate-600 hover:text-[#0B1B3D] font-medium text-sm px-3 py-2 transition-colors cursor-pointer hidden xl:inline-block"
-            >
-              Join Our Team
-            </button>
 
             <button
               onClick={() => setIsRequestCareOpen(true)}
@@ -250,9 +270,23 @@ export default function App() {
               <span className="py-1">Our Services</span>
               <span className="py-1">Who We Help</span>
               <span className="py-1">Client Stories</span>
-              <span className="py-1">About Us</span>
+              <div>
+                <button
+                  type="button"
+                  onClick={() => setIsAboutDropdownOpen(!isAboutDropdownOpen)}
+                  className="w-full flex items-center justify-between py-1 text-left font-medium text-slate-800 cursor-pointer"
+                >
+                  <span>About Us</span>
+                  <ChevronDown className={`w-4 h-4 transition-transform ${isAboutDropdownOpen ? 'rotate-180 text-amber-600' : 'text-slate-400'}`} />
+                </button>
+                {isAboutDropdownOpen && (
+                  <div className="pl-4 mt-1.5 space-y-2 text-base text-slate-600 border-l-2 border-amber-500">
+                    <span className="block py-1">About Us</span>
+                    <span className="block py-1">Contact Us</span>
+                  </div>
+                )}
+              </div>
               <span className="py-1">FAQ</span>
-              <span className="py-1">Contact Us</span>
             </nav>
             <div className="pt-3 border-t border-slate-200 flex flex-col gap-3">
               <a
@@ -271,15 +305,6 @@ export default function App() {
               >
                 Request Care
               </button>
-              <button
-                onClick={() => {
-                  setIsMobileMenuOpen(false);
-                  setIsJoinTeamOpen(true);
-                }}
-                className="w-full py-2.5 text-slate-700 font-semibold border border-slate-300 rounded-lg hover:bg-slate-50"
-              >
-                Join Our Team (Caregiver Jobs)
-              </button>
             </div>
           </div>
         )}
@@ -292,12 +317,6 @@ export default function App() {
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
               {/* Left Column: Heading, Copy, Action Buttons, Trust Bar */}
               <div className="lg:col-span-7 flex flex-col space-y-6 text-left">
-                {/* Location Kicker */}
-                <div className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-slate-600">
-                  <span className="w-2 h-2 rounded-full bg-amber-500"></span>
-                  <span>New York & Pennsylvania</span>
-                </div>
-
                 {/* Only H1 heading on the page per instructions */}
                 <h1 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-[#0B1B3D] tracking-tight leading-[1.15] text-balance">
                   Reliable 24/7 In-Home Care Services in New York and Pennsylvania
@@ -1194,17 +1213,13 @@ export default function App() {
                   <span>Privacy Policy</span>
                   <span>Partner With Us</span>
                   <span>Join Our Team</span>
-                  <span>WhatsApp Support: (718) 496-7111</span>
                 </div>
               </div>
             </div>
 
             {/* Bottom copyright */}
-            <div className="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-400">
+            <div className="pt-8 flex items-center justify-center text-xs text-slate-400">
               <p>© {new Date().getFullYear()} Astor Health. All Rights Reserved.</p>
-              <div>
-                <span>Director of Operations: JP de Leon</span>
-              </div>
             </div>
           </div>
         </footer>
